@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index_21</title>
+</head>
+
+<body>
+  <script>
+    let a = prompt('Введите длинну стороны треугольника "a": ', '').replace(/\s+/g, '');
+    while (a <= 0 || isNaN(+a)) {
+      alert('Длинна стороны треугольника введена некорректно.\nВведите ещё раз!')
+      a = prompt('Введите длинну стороны треугольника "a":', '').replace(/\s+/g, '');
+    }
+
+    let b = prompt('Введите длинну стороны треугольника "b": ', '').replace(/\s+/g, '');
+    while (b <= 0 || isNaN(+b)) {
+      alert('Длинна стороны треугольника введена некорректно.\nВведите ещё раз!')
+      b = prompt('Введите длинну стороны треугольника "b":', '').replace(/\s+/g, '');
+    }
+
+    let c = prompt('Введите длинну стороны треугольника "с": ', '').replace(/\s+/g, '');
+    while (c <= 0 || isNaN(+c)) {
+      alert('Длинна стороны треугольника введена некорректно.\nВведите ещё раз!')
+      c = prompt('Введите длинну стороны треугольника "c":', '').replace(/\s+/g, '');
+    }
+
+    let res = ((a * a + b * b) == c * c) ? 'Ура: угадали длины сторон треугольника' : 'Надо учить теорему';
+    alert(res);
+
+  </script>
+  </body>
+  </html>

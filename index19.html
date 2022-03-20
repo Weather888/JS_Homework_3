@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index_19</title>
+</head>
+
+<body>
+  <script>
+    let a = prompt('Введите значение переменной a:', 'значение переменной a');
+    while (isNaN(a)) {
+      alert('Допускается ввод только цифр');
+      let a = prompt('Введите значение переменной a:', 'значение переменной a');
+    }
+    let b = prompt('Введите значение переменной b:', 'значение переменной b');
+    while (isNaN(b)) {
+      alert('Допускается ввод только цифр');
+      let b = prompt('Введите значение переменной b:', 'значение переменной b');
+    }
+    let result = (Math.sqrt(a * b) < 4) ? 'Мало' : 'Много';
+    alert(result);
+  </script>
+  
+  </body>
+  </html>
